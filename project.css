@@ -1,0 +1,546 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.navbar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 25px;
+  background-color: rgb(188, 90, 188);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+.navbar .logo{
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: monospace;
+  color: white;
+  text-transform: uppercase;
+}
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  list-style: none;
+  margin: 10px;
+  padding: 10px;
+}
+.navbar ul li a {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: sans-serif;
+  padding: 25px;
+  transition: .5s;
+  color: white;
+}
+.logo:hover{
+    color: deeppink;
+    transition: .5s;
+}
+.navbar ul li a:hover{
+    color: rgb(150, 24, 150);
+    text-decoration: underline;
+}
+.menu-toggle{
+  display: none;
+}
+section{
+ padding: 150px 200px 100px;
+}
+.main{
+  display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  min-height: 100vh;
+  color: rgb(235, 109, 212);
+  justify-content: space-between;
+  overflow: visible;
+}
+.main .home-info h1 span{
+    color: lightcoral;
+    display: inline-block;
+    margin-top: 10px;
+}
+.home-info h1{
+    font-size: 45px;
+    color:rgb(90, 6, 90);
+    font-family: monospace;
+}
+.home-info p{
+    font-size: 25px;
+    margin: 15px 0 25px;
+    color: grey;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.home-info .buttons{
+    display: flex;
+    align-items: center;
+}
+.button1{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: violet;
+    border: 2px solid darkorchid;
+    border-radius: 15px;
+    box-shadow: 0 0 10px white;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    font-weight: 600px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition:0.7 ease-in
+}
+.button1:hover{
+    background: transparent;
+    color: violet;
+    box-shadow: none;
+    transform: scale(1.1,1.2);
+}
+.home-info .social-media{
+    margin-top: 20px;
+}
+.home-info .social-media a{
+    display: inline-flex;
+    padding: 10px;
+    border: 5px solid rgb(206, 42, 170);
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(246, 10, 187);
+    margin: 0 5px;
+    transition: .7s ease;
+}
+.home-info .social-media a:hover{
+    background-color:violet;
+    color: black;
+    box-shadow: 0 0 10px rgb(209, 75, 102);
+}
+.home-info{
+    width: 70%;
+    position: absolute;
+    left: 15%;
+    top: 20%;
+    margin: 30px;
+    padding: 30px;
+}
+img{
+    width: 30%;
+    border-radius: 10px;
+    float: right;
+}
+img:hover{
+ transform: scale(1.1);
+transition: .7s ease;
+}
+.skills{
+color: rgb(129, 53, 78);
+  background-color: rgb(205, 205, 205);
+  padding: 80px;
+  border-radius: 10px;
+  text-align: center;
+}
+.skills h1{
+  margin: 30px;
+  margin-bottom: 20px;
+  font-family: monospace;
+  font-size: 30px;
+}
+.skills h1:hover{
+  color: #72147a;
+  transition: .5s ease;
+}
+.skills > div {
+  display: inline-block;
+  margin: 0 20px;
+}
+.skills img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.skills h3{
+    color: rgb(104, 58, 80);
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif
+}
+.cards h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(187, 81, 197);
+  font-size: 40px;
+  font-weight: 300;
+  font-family:sans-serif;
+  margin: 30px;
+}
+.content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.services{
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+color: rgb(129, 53, 78);
+  background-color: rgb(159, 136, 158);
+  padding: 80px;
+  border-radius: 10px;
+  text-align: center;
+}
+.services h1{
+  margin: 30px;
+  font-family: monospace;
+  padding: 40px;
+}
+.cards-parent{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.cards-parent .cardd{
+    width: 300px;
+    height: 400px;
+
+}
+.cards-parent .cardd img{
+    width: 100%;
+    height: 50%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.services .cards-parent .cardd h2{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 50px;
+  margin-top: 55px; 
+  border-radius: 20px 30px;
+}
+.services .cards-parent .cardd:hover{
+transform: scale(1.1);
+transition: .7s ease;
+}
+.services h1:hover{
+  color: #72147a;
+  transition: .5s ease;
+}
+.contact {
+  background-color: #f7f0fa;
+  padding: 80px;
+  text-align: center;
+}
+.contact h1 {
+  font-size: 36px;
+  color: #c55ec9;
+  margin-bottom: 10px;
+}
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  border: 2px solid #c55ec9;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: monospace;
+  outline: none;
+  resize: none;
+}
+.btn {
+  background-color: #c55ec9;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.btn:hover {
+  background-color: #a045a8;
+  box-shadow: 0 0 15px #c55ec9, 0 0 25px #c55ec9;
+  transform: scale(1.05);
+}
+@media screen and (min-width: 300px) and (max-width: 480px){
+ .navbar .logo{
+  font-size: 20px;
+}
+.navbar ul {
+  display: block;
+  margin-left: 40%;
+}
+img {
+     width: 90%;
+    height: auto;
+    float: none;
+    border-radius: 10px;
+    display: block;
+    margin: 100px auto 20px;
+    object-fit: contain;
+  }
+   .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     margin-top: 20px;
+  }
+  .navbar ul {
+  display: flex; 
+}
+
+.menu-toggle{
+  display: none; 
+}
+}
+@media screen and (min-width: 481px) and (max-width: 768px){
+.navbar .logo{
+  font-size: 30px;
+}
+.navbar ul {
+  display: block;
+  margin-left: 40%;
+}
+.main{
+  width: 100%;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+   align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.home-info{
+    position: static;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+  }
+   section {
+  padding: 100px 20px 50px;
+  }
+}
+  
+@media (max-width: 600px) {
+  section {
+    padding: 100px 20px 50px; 
+  }
+
+  .navbar {
+    padding: 15px 20px; 
+  }
+
+  .navbar .logo {
+    font-size: 24px; 
+  }
+
+  .navbar ul {
+       display: none; 
+  }
+  
+  
+  /*
+  .navbar ul {
+    flex-direction: column;
+    position: absolute;
+    top: 55px; // Adjust based on new navbar height
+    left: 0;
+    width: 100%;
+    background-color: rgb(188, 90, 188);
+    padding: 10px 0;
+  }
+
+  .navbar ul li {
+    margin: 5px 0;
+    text-align: center;
+  }
+  
+  .navbar ul li a {
+    padding: 10px; 
+    font-size: 18px;
+  }
+  */
+
+  .main {
+    flex-direction: column;
+    text-align: center;
+    min-height: auto;
+  }
+
+  .home-info {
+    width: 100%;
+    position: static;
+    left: auto;
+    top: auto;
+    margin: 0;
+    padding: 20px;
+    order: 2;
+  }
+
+  .home-info h1 {
+    font-size: 32px; 
+  }
+
+  .home-info p {
+        font-size: 18px; 
+    margin-bottom: 20px;
+  }
+
+  .home-info .buttons {
+    justify-content: center;
+  }
+
+  img {
+    width: 80%;
+    float: none; 
+    margin: 20px auto;
+    order: 1;
+  }
+
+  .skills {
+    padding: 40px 20px;
+  }
+
+  .skills h1 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+  }
+
+  .skills > div {
+    display: block; 
+    margin: 20px 0;
+  }
+
+  .cards h2 {
+    font-size: 30px;
+    margin: 20px 0;
+  }
+
+  .services {
+    padding: 40px 20px;
+  }
+
+  .services h1 {
+    padding: 0;
+    margin: 20px 0;
+  }
+
+  .cards-parent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards-parent .cardd {
+    width: 90%; 
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .services .cards-parent .cardd h2 {
+    padding: 20px; 
+    margin-top: 20px; 
+    font-size: 20px;
+  }
+
+  
+  .contact {
+    padding: 40px 20px;
+  }
+
+  .contact h1 {
+    font-size: 30px;
+  }
+  .menu-toggle{
+    display: inline-block;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  section {
+    padding: 100px 80px 80px; 
+  }
+  .navbar {
+    padding: 20px 40px; 
+  }
+  
+  .navbar ul li a {
+    padding: 15px; 
+    font-size: 18px;
+  }
+  .main {
+    flex-wrap: wrap; 
+    justify-content: space-around;
+  }
+
+  .home-info {
+    width: 60%; 
+    position: static; 
+    left: auto;
+    top: auto;
+    margin: 20px 0;
+    padding: 0;
+  }
+
+  .home-info h1 {
+    font-size: 40px; 
+  }
+
+  .home-info p {
+    font-size: 22px; 
+  }
+  
+  img {
+    width: 35%; 
+    float: none; 
+    margin: 20px 0;
+  }
+
+  .skills, .services, .contact {
+    padding: 60px 40px; 
+  }
+
+  .cards-parent {
+    justify-content: space-between;
+  }
+
+  .cards-parent .cardd {
+    width: calc(33% - 20px); 
+    min-width: 250px; 
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .services .cards-parent .cardd h2 {
+    padding: 30px; 
+    font-size: 20px;
+  }
+}
